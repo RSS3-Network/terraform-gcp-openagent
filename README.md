@@ -12,7 +12,15 @@ The resources/services/activations/deletions that this module will create/trigge
 
 ```terraform
 module "openagent" {
-# todo
+  source = "RSS3-Network/openagent/gcp"
+
+  nftscan_api_key = "<NFTSCAN_API_KEY>"
+  serpapi_api_key = "<SERPAPI_API_KEY>"
+
+  oauth = {
+    OAUTH_GOOGLE_CLIENT_ID     = "<OAUTH_GOOGLE_CLIENT_ID>"
+    OAUTH_GOOGLE_CLIENT_SECRET = "<OAUTH_GOOGLE_CLIENT_SECRET>"
+  }
 }
 ```
 
