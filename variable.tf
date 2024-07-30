@@ -19,6 +19,11 @@ variable "serp_api_key" {
   type        = string
 }
 
+variable "google_gemini_api_key" {
+  description = "API key for Google Gemini"
+  type        = string
+}
+
 variable "sql_tier" {
   description = "CloudSQL Postgres tier"
   type        = string
