@@ -1,4 +1,4 @@
-resource "random_bytes" "chainlit_auth_secret" {
+resource "random_password" "chainlit_auth_secret" {
   length = 32
 
 }
@@ -18,7 +18,7 @@ locals {
     DB_CONNECTION = "postgresql+psycopg://${google_sql_user.openagent.name}:${random_password.openagent.result}@/${google_sql_database.openagent.name}?host=/cloudsql/${google_sql_database_instance.openagent.connection_name}"
     LLM_API_BASE  = "https://api.openai.com/v1"
 
-    CHAINLIT_AUTH_SECRET = random_bytes.chainlit_auth_secret.result
+    CHAINLIT_AUTH_SECRET = random_password.chainlit_auth_secret.result
 
   }
 }
