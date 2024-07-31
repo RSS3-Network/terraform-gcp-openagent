@@ -19,11 +19,6 @@ variable "serp_api_key" {
   type        = string
 }
 
-variable "google_gemini_api_key" {
-  description = "API key for Google Gemini"
-  type        = string
-}
-
 variable "sql_tier" {
   description = "CloudSQL Postgres tier"
   type        = string
@@ -45,7 +40,7 @@ variable "image_repo" {
 variable "image_tag" {
   description = "The image tag"
   type        = string
-  default     = "v20240715.1"
+  default     = "v1.0.0"
 }
 
 variable "oauth" {
