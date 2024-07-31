@@ -5,14 +5,14 @@ resource "random_bytes" "chainlit_auth_secret" {
 
 locals {
   env = {
-    ENV             = "prod"
-    MODEL_NAME      = "gemini-1.5-pro"
-    GOOGLE_CLOUD_PROJECT_ID      = var.project
-    RSS3_DATA_API   = "https://testnet.rss3.io/data"
-    RSS3_SEARCH_API = "https://devnet.rss3.io/search"
-    NFTSCAN_API_KEY = var.nftscan_api_key
-    SERPAPI_API_KEY = var.serp_api_key
-    GOOGLE_GEMINI_API_KEY = var.google_gemini_api_key
+    ENV                     = "prod"
+    MODEL_NAME              = "gemini-1.5-pro"
+    GOOGLE_CLOUD_PROJECT_ID = var.project
+    RSS3_DATA_API           = "https://testnet.rss3.io/data"
+    RSS3_SEARCH_API         = "https://devnet.rss3.io/search"
+    NFTSCAN_API_KEY         = var.nftscan_api_key
+    SERPAPI_API_KEY         = var.serp_api_key
+    GOOGLE_GEMINI_API_KEY   = var.google_gemini_api_key
 
     # DB with unix socket
     DB_CONNECTION = "postgresql+psycopg://${google_sql_user.openagent.name}:${random_password.openagent.result}@/${google_sql_database.openagent.name}?host=/cloudsql/${google_sql_database_instance.openagent.connection_name}"
