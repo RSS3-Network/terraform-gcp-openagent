@@ -1,12 +1,12 @@
-# Terraform Openagent GCP Module
+# Terraform OpenAgent GCP Module
 
-This module helpers you to deploy Openagent on Google Cloud Platform with Vertex AI API.
+This module helps you deploy OpenAgent on Google Cloud Platform to leverage Vertex AI.
 
 The resources/services/activations/deletions that this module will create/trigger are:
 
-- Create cloudsql postgresql database
+- Create Cloud SQL PostgreSQL database
 - Create pgvector extension
-- Create cloud run service
+- Create Cloud Run service
 
 ## Usage
 
