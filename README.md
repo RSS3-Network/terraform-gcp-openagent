@@ -39,8 +39,8 @@ More examples can be found in the [examples](./examples) directory.
 | --------------- | ---------------------------------------------------------------------------------- | ------------- | ------------------ | :------: |
 | project         | The project name                                                                   | `string`      | n/a                |   yes    |
 | region          | value of the region                                                                | `string`      | `"us-central1"`    |    no    |
-| nftscan_api_key | API key for NFTScan                                                                | `string`      | n/a                |   yes    |
-| serp_api_key    | API key for Serp API                                                               | `string`      | n/a                |   yes    |
+| nftscan_api_key | API key for NFTScan                                                                | `string`      | ""                 |    no    |
+| serp_api_key    | API key for Serp API                                                               | `string`      | ""                 |    no    |
 | sql_tier        | CloudSQL Postgres tier                                                             | `string`      | `"db-f1-micro"`    |    no    |
 | sql_version     | CloudSQL Postgres version                                                          | `string`      | `"POSTGRES_15"`    |    no    |
 | image_repo      | The image repository                                                               | `string`      | `"rss3/openagent"` |    no    |

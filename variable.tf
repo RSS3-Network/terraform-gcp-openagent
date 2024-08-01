@@ -12,11 +12,13 @@ variable "region" {
 variable "nftscan_api_key" {
   description = "API key for NFTScan"
   type        = string
+  default     = ""
 }
 
 variable "serp_api_key" {
   description = "API key for Serp API"
   type        = string
+  default     = ""
 }
 
 variable "sql_tier" {
@@ -40,7 +42,7 @@ variable "image_repo" {
 variable "image_tag" {
   description = "The image tag"
   type        = string
-  default     = "v1.0.0"
+  default     = "v1.0.1"
 }
 
 variable "oauth" {
