@@ -12,11 +12,13 @@ variable "region" {
 variable "nftscan_api_key" {
   description = "API key for NFTScan"
   type        = string
+  default     = ""
 }
 
 variable "serp_api_key" {
   description = "API key for Serp API"
   type        = string
+  default     = ""
 }
 
 variable "sql_tier" {
