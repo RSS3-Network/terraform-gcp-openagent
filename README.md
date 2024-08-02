@@ -14,8 +14,7 @@ The resources/services/activations/deletions that this module will create/trigge
 module "openagent" {
   source = "RSS3-Network/openagent/gcp"
 
-  nftscan_api_key = "<NFTSCAN_API_KEY>"
-  serpapi_api_key = "<SERPAPI_API_KEY>"
+  project = "<GCP_PROJECT_ID>"
 
   oauth = {
     OAUTH_GOOGLE_CLIENT_ID     = "<OAUTH_GOOGLE_CLIENT_ID>"
@@ -37,7 +36,7 @@ More examples can be found in the [examples](./examples) directory.
 
 | Name            | Description                                                                        | Type          | Default            | Required |
 | --------------- | ---------------------------------------------------------------------------------- | ------------- | ------------------ | :------: |
-| project         | The project name                                                                   | `string`      | n/a                |   yes    |
+| project         | GCP project ID                                                                     | `string`      | n/a                |   yes    |
 | region          | value of the region                                                                | `string`      | `"us-central1"`    |    no    |
 | nftscan_api_key | API key for NFTScan                                                                | `string`      | ""                 |    no    |
 | serp_api_key    | API key for Serp API                                                               | `string`      | ""                 |    no    |
