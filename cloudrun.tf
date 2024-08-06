@@ -14,7 +14,10 @@ locals {
     RSS3_DATA_API           = "https://testnet.rss3.io/data"
     RSS3_SEARCH_API         = "https://devnet.rss3.io/search"
     NFTSCAN_API_KEY         = var.nftscan_api_key
-    SERPAPI_API_KEY         = var.serp_api_key
+    TAVILY_API_KEY          = var.tavily_api_key
+    COVALENT_API_KEY        = var.covalent_api_key
+    ROOTDATA_API_KEY        = var.rootdata_api_key
+    COINGECKO_API_KEY       = var.coingecko_api_key
 
     # setup llm providers
     GOOGLE_GEMINI_API_KEY   = var.gemini_api_key

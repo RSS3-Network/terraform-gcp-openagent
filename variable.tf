@@ -28,10 +28,28 @@ variable "nftscan_api_key" {
   default     = ""
 }
 
-variable "serp_api_key" {
-  description = "API key for Serp API"
+variable "tavily_api_key" {
+  description = "API key for Tavily"
   type        = string
   default     = ""
+}
+
+variable "covalent_api_key" {
+  description = "API key for Covalent"
+  type    = string
+  default = ""
+}
+
+variable "rootdata_api_key" {
+  description = "API key for RootData"
+  type    = string
+  default = ""
+}
+
+variable "coingecko_api_key" {
+  description = "API key for CoinGecko"
+  type    = string
+  default = ""
 }
 
 variable "sql_tier" {
