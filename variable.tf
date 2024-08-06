@@ -9,12 +9,6 @@ variable "region" {
   default     = "us-central1"
 }
 
-variable "model_name" {
-  description = "LLM model name for OpenAgent, compatible models listed in https://docs.rss3.io/guide/artificial-intelligence/openagent/compatible-models"
-  type        = string
-  default     = "gemini-1.5-pro"
-}
-
 variable "gemini_api_key" {
   description = "API key for Gemini"
   type        = string
@@ -34,10 +28,28 @@ variable "nftscan_api_key" {
   default     = ""
 }
 
-variable "serp_api_key" {
-  description = "API key for Serp API"
+variable "tavily_api_key" {
+  description = "API key for Tavily"
   type        = string
   default     = ""
+}
+
+variable "covalent_api_key" {
+  description = "API key for Covalent"
+  type    = string
+  default = ""
+}
+
+variable "rootdata_api_key" {
+  description = "API key for RootData"
+  type    = string
+  default = ""
+}
+
+variable "coingecko_api_key" {
+  description = "API key for CoinGecko"
+  type    = string
+  default = ""
 }
 
 variable "sql_tier" {
@@ -61,7 +73,7 @@ variable "image_repo" {
 variable "image_tag" {
   description = "The image tag"
   type        = string
-  default     = "v1.0.1"
+  default     = "v1.0.3"
 }
 
 variable "oauth" {
