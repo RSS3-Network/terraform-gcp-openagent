@@ -73,7 +73,7 @@ variable "image_repo" {
 variable "image_tag" {
   description = "The image tag"
   type        = string
-  default     = "v1.0.1"
+  default     = "v1.0.3"
 }
 
 variable "oauth" {

@@ -22,7 +22,7 @@ locals {
     # setup llm providers
     GOOGLE_GEMINI_API_KEY   = var.gemini_api_key
     OPENAI_API_KEY          = var.openai_api_key
-    GOOGLE_CLOUD_PROJECT_ID = fallback_vertex_ai ? var.project : ""
+    GOOGLE_CLOUD_PROJECT_ID = local.fallback_vertex_ai ? var.project : ""
 
     # DB with unix socket
     DB_CONNECTION = "postgresql+psycopg://${google_sql_user.openagent.name}:${random_password.openagent.result}@/${google_sql_database.openagent.name}?host=/cloudsql/${google_sql_database_instance.openagent.connection_name}"
