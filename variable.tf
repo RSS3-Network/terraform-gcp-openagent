@@ -9,12 +9,6 @@ variable "region" {
   default     = "us-central1"
 }
 
-variable "model_name" {
-  description = "LLM model name for OpenAgent, compatible models listed in https://docs.rss3.io/guide/artificial-intelligence/openagent/compatible-models"
-  type        = string
-  default     = "gemini-1.5-pro"
-}
-
 variable "gemini_api_key" {
   description = "API key for Gemini"
   type        = string
